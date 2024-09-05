@@ -43,7 +43,7 @@ const Pagination = ({
     }
   }, [activePageNumber, pagesArr.length]);
 
-  if (itemsLength == 0) {
+  if (itemsLength === 0) {
     return null;
   } else
     return (
@@ -69,7 +69,7 @@ const Pagination = ({
                     ref={isActive ? activePageRef : null}
                     className={`text-sm font-normal rounded-3xl border ${
                       isActive
-                        ? "border-text-accent text-text-accent"
+                        ? "border-gray-500 "
                         : "border-text-icons-secondaty-text text-text-secondary"
                     } w-max px-3 py-1 mx-1 cursor-pointer `}
                   >
